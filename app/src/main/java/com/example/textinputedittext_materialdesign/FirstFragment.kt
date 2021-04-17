@@ -21,9 +21,9 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         }
 
         binding.textInputEditTextNumber.doOnTextChanged { text, start, before, count ->
-            if (text!!.length>10) {
+            if (text!!.length > 10) {
                 binding.textInputLayoutNumber.error = "No More!"
-            } else if (text.length < 10 ) {
+            } else if (text.length < 10) {
                 binding.textInputLayoutNumber.error = null
             }
         }
